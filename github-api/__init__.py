@@ -3,7 +3,7 @@ from flask import Flask
 from . import models
 from .extensions import config, oauth, assets
 # from .views.starry import starry
-from .views.users import users
+# from .views.users import users
 
 
 DEBUG = True
