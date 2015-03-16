@@ -1,22 +1,21 @@
-from flask import Blueprint, render_template, redirect, url_for, flash
-
-from .users import require_login, github
-from ..pagination import Paginator
-
-repolister = Blueprint("repolister", __name__)
-
-
-@repolister.route("/")
-# @repolister.route("/page/<int:page>")
-@require_login
-def index():
-    resp = github.get("/user/repos")
-
-    # paginator = Paginator(resp, page)
-
-    return render_template("index.html",
-                        #    paginator=paginator,
-                           repos=resp.data)
+# from flask import Blueprint, render_template, redirect, url_for, flash
+#
+# from .users import require_login, facebook
+#
+# repolister = Blueprint("repolister", __name__)
+#
+#
+# @repolister.route("/")
+# # @repolister.route("/page/<int:page>")
+# @require_login
+# def index():
+#     resp = facebook.get("/user/repos")
+#
+#     # paginator = Paginator(resp, page)
+#
+#     return render_template("index.html",
+#                         #    paginator=paginator,
+#                            repos=resp.data)
 
 
 # @starry.route("/unstar/<user>/<repo>")
