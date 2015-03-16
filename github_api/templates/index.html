@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul class="blocks-3">
+        {% for repo in repos %}
+            <li>
+                <a href="{{ repo.html_url }}">{{ repo.full_name }}</a> |
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

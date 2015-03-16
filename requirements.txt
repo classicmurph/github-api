@@ -21,4 +21,8 @@ pytest>=2.6.3
 webtest
 
 # Management script
+<<<<<<< HEAD
 Flask-Script
+=======
+Flask-Script
+>>>>>>> 4321c21c0813092e24d6ad52215dd4bd6bd89e55
